@@ -1,7 +1,9 @@
+import React from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import weatherImg from '../assets/images/weather-app.jpg'
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -10,6 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <img src={weatherImg} alt="weather images"/>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -63,3 +66,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
