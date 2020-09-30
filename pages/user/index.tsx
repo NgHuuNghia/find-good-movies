@@ -1,13 +1,13 @@
 import React from 'react'
 import Head from 'next/head'
-import '../styles/Home.module.scss'
-import weatherImg from '../assets/images/weather-app.jpg'
+import './index.scss'
+import weatherImg from '../../assets/images/weather-app.jpg'
 
-const Home: React.FC = () => {
+const User: React.FC = () => {
   return (
-    <div className="home">
+    <div className="user">
       <Head>
-        <title>home</title>
+        <title>User</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -67,4 +67,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default User
